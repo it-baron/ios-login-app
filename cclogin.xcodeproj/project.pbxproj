@@ -99,6 +99,7 @@
 				TargetAttributes = {
 					16BB5EDC1DD0ED4C00664639 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 8J73XFB5ZF;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -264,6 +265,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8J73XFB5ZF;
 				INFOPLIST_FILE = cclogin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.tangotel.cclogin;
@@ -276,6 +278,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8J73XFB5ZF;
 				INFOPLIST_FILE = cclogin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.tangotel.cclogin;
