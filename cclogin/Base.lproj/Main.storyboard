@@ -25,6 +25,7 @@
                                 <rect key="frame" x="67" y="186.5" width="185" height="30"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="go" secureTextEntry="YES"/>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="taxionline_logo" translatesAutoresizingMaskIntoConstraints="NO" id="zBA-f0-DrX">
@@ -52,11 +53,40 @@
                     <connections>
                         <outlet property="txtLogin" destination="Khj-Ly-jna" id="VXY-o6-ZmB"/>
                         <outlet property="txtPassword" destination="xZc-u9-Tck" id="GVe-pa-vj7"/>
+                        <segue destination="Mt7-70-mwZ" kind="show" identifier="ShowWebView" id="EEq-kT-Nrc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="31.875" y="36.971830985915496"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="fQ2-3k-PP0">
+            <objects>
+                <viewController id="Mt7-70-mwZ" customClass="WebViewController" customModule="cclogin" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NDD-M1-ep6"/>
+                        <viewControllerLayoutGuide type="bottom" id="kPw-qR-bZu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PDL-nO-dDl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YNm-Ki-He0">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="uiWebView" destination="YNm-Ki-He0" id="fds-vk-Or4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ne9-oj-S7G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="763.125" y="39.08450704225352"/>
         </scene>
     </scenes>
     <resources>
