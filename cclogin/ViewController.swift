@@ -40,7 +40,7 @@ class ViewController: UIViewController {
             return;
         }
         
-        let req = "http://stat.cc.2t.ru/cc/index.php?option=mod_api&version=1.0&api_module=engine&action=check_auth&username=\(txtLogin.text!)&password=\(txtPassword.text!)";
+        let req = "https://mstat.2t.ru/cc/index.php?option=mod_api&version=1.0&api_module=engine&action=check_auth&username=\(txtLogin.text!)&password=\(txtPassword.text!)";
         
         var request = URLRequest(url: URL(string: req)!)
         request.httpMethod = "GET";
@@ -70,7 +70,7 @@ class ViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let req = "http://stat.cc.2t.ru/cc/index.php?option=login&username=\(txtLogin.text!)&password=\(txtPassword.text!)";
+        let req = "https://mstat.2t.ru/cc/index.php?option=login&username=\(txtLogin.text!)&password=\(txtPassword.text!)";
         
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
