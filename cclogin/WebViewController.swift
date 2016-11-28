@@ -35,5 +35,10 @@ class WebViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    @IBAction func onBackPress(_ sender: Any) {
+        if uiWebView.canGoBack {
+            uiWebView.goBack()
+        }
+    }
 
 }
