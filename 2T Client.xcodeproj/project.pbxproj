@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		16BB5EDD1DD0ED4C00664639 /* cclogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cclogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		16BB5EDD1DD0ED4C00664639 /* 2T Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "2T Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		16BB5EE01DD0ED4C00664639 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16BB5EE21DD0ED4C00664639 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		16BB5EE51DD0ED4C00664639 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -48,7 +48,7 @@
 		16BB5EDE1DD0ED4C00664639 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				16BB5EDD1DD0ED4C00664639 /* cclogin.app */,
+				16BB5EDD1DD0ED4C00664639 /* 2T Client.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,9 +70,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		16BB5EDC1DD0ED4C00664639 /* cclogin */ = {
+		16BB5EDC1DD0ED4C00664639 /* 2T Client */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 16BB5EEF1DD0ED4C00664639 /* Build configuration list for PBXNativeTarget "cclogin" */;
+			buildConfigurationList = 16BB5EEF1DD0ED4C00664639 /* Build configuration list for PBXNativeTarget "2T Client" */;
 			buildPhases = (
 				16BB5ED91DD0ED4C00664639 /* Sources */,
 				16BB5EDA1DD0ED4C00664639 /* Frameworks */,
@@ -82,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = cclogin;
+			name = "2T Client";
 			productName = cclogin;
-			productReference = 16BB5EDD1DD0ED4C00664639 /* cclogin.app */;
+			productReference = 16BB5EDD1DD0ED4C00664639 /* 2T Client.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -94,7 +94,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = tangotel;
 				TargetAttributes = {
 					16BB5EDC1DD0ED4C00664639 = {
@@ -104,7 +104,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 16BB5ED81DD0ED4C00664639 /* Build configuration list for PBXProject "cclogin" */;
+			buildConfigurationList = 16BB5ED81DD0ED4C00664639 /* Build configuration list for PBXProject "2T Client" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -117,7 +117,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				16BB5EDC1DD0ED4C00664639 /* cclogin */,
+				16BB5EDC1DD0ED4C00664639 /* 2T Client */,
 			);
 		};
 /* End PBXProject section */
@@ -186,9 +186,11 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -236,9 +238,11 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -271,6 +275,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.tangotel.cclogin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -279,18 +284,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8J73XFB5ZF;
+				"DEVELOPMENT_TEAM[sdk=*]" = 8J73XFB5ZF;
 				INFOPLIST_FILE = cclogin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.tangotel.cclogin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		16BB5ED81DD0ED4C00664639 /* Build configuration list for PBXProject "cclogin" */ = {
+		16BB5ED81DD0ED4C00664639 /* Build configuration list for PBXProject "2T Client" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				16BB5EED1DD0ED4C00664639 /* Debug */,
@@ -299,7 +306,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		16BB5EEF1DD0ED4C00664639 /* Build configuration list for PBXNativeTarget "cclogin" */ = {
+		16BB5EEF1DD0ED4C00664639 /* Build configuration list for PBXNativeTarget "2T Client" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				16BB5EF01DD0ED4C00664639 /* Debug */,
