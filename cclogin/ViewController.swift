@@ -29,6 +29,10 @@ class ViewController: UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
 
+    @IBAction func onNavigate(_ sender: Any) {
+        self.performSegue(withIdentifier: "ShowAppView", sender: nil);
+    }
+    
     @IBAction func onLogin(_ sender: Any) {
         if (txtLogin.text?.isEmpty)! {
             self.alert(message: "Логин не может быть пустым")
@@ -70,12 +74,14 @@ class ViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let req = "https://mstat.2t.ru/cc/index.php?option=login&username=\(txtLogin.text!)&password=\(txtPassword.text!)";
-        
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-        let webView = segue.destination as! WebViewController
-        webView.urlToOpen = req;
+        if(segue.identifier == "ShowWebView") {
+            let req = "https://mstat.2t.ru/cc/index.php?option=login&username=\(txtLogin.text!)&password=\(txtPassword.text!)";
+            
+            // Get the new view controller using segue.destinationViewController.
+            // Pass the selected object to the new view controller.
+            let webView = segue.destination as! WebViewController
+            webView.urlToOpen = req;
+        }
     }
 }
 
