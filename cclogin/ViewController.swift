@@ -9,13 +9,25 @@
 import UIKit
 import Foundation
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var txtLogin: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        txtLogin.resignFirstResponder()
+        txtPassword.resignFirstResponder()
+        
+        txtLogin?.returnKeyType = UIReturnKeyType.done
+        txtLogin?.delegate = self
+        
+        txtPassword?.returnKeyType = UIReturnKeyType.done
+        txtPassword?.delegate = self
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        onLogin(textField)
+        return true
     }
     
     func alert(message: String) {
