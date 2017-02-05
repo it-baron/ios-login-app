@@ -25,16 +25,16 @@ struct CCApiStrings {
 }
 
 struct CCApi {
-    static let login: String = "demoapp";
-    static let password: String = "";
+    static let login: String = "demoapp"
+    static let password: String = ""
     
     static func accountRequest() -> URLRequest {
         let myUrl = URL(string: "\(LocalApiStrings.accountURLString)&login=\(login)",
             relativeTo: URL(string: LocalApiStrings.baseURLString))
         
         var request = URLRequest(url: myUrl!)
-        request.httpMethod = "GET";
-        return request;
+        request.httpMethod = "GET"
+        return request
     }
     
     static func projectsRequest() -> URLRequest {
@@ -42,8 +42,23 @@ struct CCApi {
                         relativeTo: URL(string: LocalApiStrings.baseURLString))
         
         var request = URLRequest(url: myUrl!)
-        request.httpMethod = "GET";
-        return request;
+        request.httpMethod = "GET"
+        return request
     }
     
+    static func operatorsRequest() -> URLRequest {
+        let myUrl = URL(string: "\(LocalApiStrings.operatorsURLString)&login=\(login)",
+                        relativeTo: URL(string: LocalApiStrings.baseURLString))
+        var request = URLRequest(url: myUrl!)
+        request.httpMethod = "GET"
+        return request
+    }
+    
+    static func monitoringRequest() -> URLRequest {
+        let myUrl = URL(string: "\(LocalApiStrings.monitoringURLString)&login=\(login)",
+            relativeTo: URL(string: LocalApiStrings.baseURLString))
+        var request = URLRequest(url: myUrl!)
+        request.httpMethod = "GET"
+        return request
+    }
 }

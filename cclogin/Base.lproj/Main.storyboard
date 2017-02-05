@@ -567,7 +567,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BAE-lt-94V" userLabel="Account Navigation" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Аккаунт" image="contacts_2x" id="eHR-RC-MYv"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" id="i2Z-4n-co1">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="i2Z-4n-co1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.52263247970000004" green="0.1761913598" blue="0.51911449430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -588,7 +588,7 @@
                     <tabBarItem key="tabBarItem" title="Проекты" image="bookmarks_2x" id="gLz-1K-Lrr"/>
                     <toolbarItems/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" id="ffG-nS-1kf">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="ffG-nS-1kf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.52263247970000004" green="0.1761913598" blue="0.51911449430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -608,7 +608,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QP7-wh-hEv" userLabel="Operators Navigation" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Операторы" image="history_2x" id="rHl-iN-vWT"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" id="gHG-0W-JQj">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="gHG-0W-JQj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.52263247970000004" green="0.1761913598" blue="0.51911449430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -628,7 +628,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SZA-Z7-ulw" userLabel="Monitoring Navigation" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Мониторинг" image="mostviewed_2x" id="aXy-OK-uZo"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" id="GL6-ki-UwL">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="GL6-ki-UwL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.52263247970000004" green="0.1761913598" blue="0.51911449430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -648,7 +648,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rGm-IS-z08" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="2Т КЦ" image="more_2x" id="7nu-DH-pem"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" id="vMQ-U3-N6b">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="vMQ-U3-N6b">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.52263247970000004" green="0.1761913598" blue="0.51911449430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

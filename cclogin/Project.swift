@@ -10,10 +10,10 @@ import Foundation
 
 class Project {
     var id: Int?
-    var shortName: String = ""
+    var shortName: String? = ""
     var name: String = ""
     
-    init(id: Int, shortName: String = "", name: String = "") {
+    init(id: Int, shortName: String? = "", name: String = "") {
         self.id = id;
         self.shortName = shortName;
         self.name = name;

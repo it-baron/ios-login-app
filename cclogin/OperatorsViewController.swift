@@ -11,14 +11,42 @@ import UIKit
 
 class OperatorsViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
+
+    var refreshControl:UIRefreshControl!
+    var operatorsStore = OperatorStore()
     
-    var operatorsDataSource = OperatorStore()
+    func loadItems() {
+        self.operatorsStore.fetchOperatorsItems {
+            (operatorsArr) -> Void in
+            
+            self.operatorsStore.items = operatorsArr
+            
+            self.refreshControl.endRefreshing()
+            self.tableView.reloadData()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        tableView.delegate = self.operatorsDataSource
-        tableView.dataSource = self.operatorsDataSource
+        self.refreshControl = UIRefreshControl()
+        self.refreshControl.attributedTitle = NSAttributedString(string: "Идет обновление...")
+        self.refreshControl.addTarget(self,
+                                      action: #selector(self.refresh(sender:)),
+                                      for: .valueChanged)
+        
+        if #available(iOS 10.0, *) {
+            self.tableView.refreshControl = refreshControl
+        } else {
+            self.tableView.addSubview(refreshControl)
+        }
+        
+        self.tableView.delegate = self.operatorsStore
+        self.tableView.dataSource = self.operatorsStore
+        self.loadItems()
     }
     
+    func refresh(sender:AnyObject) {
+        self.loadItems()
+    }
 }

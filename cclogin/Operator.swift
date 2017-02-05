@@ -9,13 +9,13 @@
 import Foundation
 
 class Operator {
-    var id: String?
-    var shortName: String = ""
+    var id: Int?
+    var shortName: String? = ""
     var name: String = ""
     var total: Int = 0
     var online: Int = 0
     
-    init(id:String, shortName:String, name:String, total:Int, online:Int) {
+    init(id: Int, shortName: String?, name: String, total: Int, online: Int) {
         self.id = id;
         self.shortName = shortName
         self.name = name;

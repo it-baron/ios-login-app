@@ -11,13 +11,40 @@ import UIKit
 class MonitoringViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
-    var monitoringDataSource = MonitoringStore()
+    var refreshControl:UIRefreshControl!
+    var monitoringStore = MonitoringStore()
+    
+    func loadItems() {
+        monitoringStore.fetchMonitoringItems {
+            (monitoringArr) -> Void in
+            
+            self.monitoringStore.items = monitoringArr
+            self.refreshControl.endRefreshing()
+            self.tableView.reloadData()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        tableView.delegate = self.monitoringDataSource
-        tableView.dataSource = self.monitoringDataSource
+        self.refreshControl = UIRefreshControl()
+        self.refreshControl.attributedTitle = NSAttributedString(string: "Идет обновление...")
+        self.refreshControl.addTarget(self,
+                                      action: #selector(self.refresh(sender:)),
+                                      for: .valueChanged)
+        
+        if #available(iOS 10.0, *) {
+            self.tableView.refreshControl = refreshControl
+        } else {
+            self.tableView.addSubview(refreshControl)
+        }
+        
+        self.tableView.delegate = self.monitoringStore
+        self.tableView.dataSource = self.monitoringStore
+        self.loadItems()
     }
     
+    func refresh(sender:AnyObject) {
+        self.loadItems()
+    }
 }

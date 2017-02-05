@@ -9,7 +9,7 @@
 import UIKit
 
 class ProjectsStore: NSObject, UITableViewDelegate, UITableViewDataSource {
-    var items: [Project] = [];
+    var items: [Project] = []
     let session = URLSession.shared
     
     func fetchProjectsItems(completion: @escaping ([Project]) -> Void) {
@@ -40,7 +40,7 @@ class ProjectsStore: NSObject, UITableViewDelegate, UITableViewDataSource {
                                     if let projItem = proj as? [String:Any] {
                                         fetchedItems.append(
                                             Project(id: projItem["id"] as! Int,
-                                                    shortName: projItem["short_name"] as! String,
+                                                    shortName: projItem["short_name"] as? String,
                                                     name: projItem["name"] as! String)
                                         )
                                     }

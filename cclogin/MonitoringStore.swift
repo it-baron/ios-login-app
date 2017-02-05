@@ -10,6 +10,59 @@ import UIKit
 
 class MonitoringStore: NSObject, UITableViewDelegate, UITableViewDataSource {
     var items: [Monitoring] = []
+    let session = URLSession.shared
+    
+    func fetchMonitoringItems(completion: @escaping ([Monitoring]) -> Void) {
+        let request = CCApi.monitoringRequest()
+        let task = session.dataTask(with: request) {
+            (data, response, error) -> Void in
+            
+            if error != nil {
+                print("error=\(error)")
+                return
+                
+            } else {
+                if let httpResponse = response as? HTTPURLResponse {
+                    if(httpResponse.statusCode != 200) {
+                        print("statusCode should be 200, but is \(httpResponse.statusCode)")
+                        print("response = \(response)")
+                        return
+                        
+                    } else {
+                        do {
+                            print("ok, response = \(response)")
+                            
+                            let json = try JSONSerialization.jsonObject(with: data!, options: []) as? [String:Any]
+                            var fetchedItems: [Monitoring] = [];
+                            
+                            if let array = json?["items"] as? [Any] {
+                                for item in array {
+                                    if let itemObj = item as? [String:Any] {
+                                        fetchedItems.append(
+                                            Monitoring(id: itemObj["id"] as! Int,
+                                                     shortName: itemObj["short_name"] as? String,
+                                                     name: itemObj["name"] as! String,
+                                                     total: itemObj["total"] as! Int,
+                                                     accepted: itemObj["accepted"] as! Int)
+                                        )
+                                    }
+                                }
+                            }
+                            
+                            DispatchQueue.main.async(execute: {
+                                completion(fetchedItems)
+                            })
+                            
+                        } catch let error as NSError {
+                            print(error)
+                        }
+                    }
+                }
+            }
+        }
+        
+        task.resume()
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count;

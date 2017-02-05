@@ -9,13 +9,13 @@
 import Foundation
 
 class Monitoring {
-    var id: String?
-    var shortName: String = ""
+    var id: Int?
+    var shortName: String? = ""
     var name: String = ""
     var total: Int = 0
     var accepted: Int = 0
     
-    init(id:String, shortName: String, name:String, total:Int, accepted:Int) {
+    init(id: Int, shortName: String?, name:String, total:Int, accepted:Int) {
         self.id = id
         self.shortName = shortName
         self.name = name
