@@ -25,8 +25,8 @@ struct CCApiStrings {
 }
 
 struct CCApi {
-    static let login: String = "demoapp"
-    static let password: String = ""
+    static var login: String = "demoapp"
+    static var password: String = ""
     
     static func accountRequest() -> URLRequest {
         let myUrl = URL(string: "\(CCApiStrings.accountURLString)&login=\(login)",

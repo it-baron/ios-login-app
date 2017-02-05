@@ -60,6 +60,7 @@ class ViewController: UIViewController {
                             let responseData = String(data: data!, encoding: String.Encoding.utf8) ?? "no data";
                             self.alert(message: "\(statusCode)\nresponse: \(responseData)")
                         } else {
+                            CCApi.login = self.txtLogin.text!
                             self.performSegue(withIdentifier: "ShowAppView", sender: nil)
                         }
                     }
