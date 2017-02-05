@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1600A8CB1E476DDC00968A40 /* CCApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1600A8CA1E476DDC00968A40 /* CCApi.swift */; };
+		1600A8CD1E4778D600968A40 /* AccountStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1600A8CC1E4778D600968A40 /* AccountStore.swift */; };
+		16412B5F1E45D5700048EE12 /* Monitoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16412B5E1E45D5700048EE12 /* Monitoring.swift */; };
+		16412B621E45D8350048EE12 /* AccountStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16412B611E45D8350048EE12 /* AccountStatus.swift */; };
+		16412B641E45D9590048EE12 /* Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16412B631E45D9590048EE12 /* Operator.swift */; };
+		16412B691E45DA410048EE12 /* CCWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16412B681E45DA410048EE12 /* CCWebView.swift */; };
+		16412B6B1E45DAA20048EE12 /* OperatorStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16412B6A1E45DAA20048EE12 /* OperatorStore.swift */; };
+		16412B6D1E45E00A0048EE12 /* MonitoringStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16412B6C1E45E00A0048EE12 /* MonitoringStore.swift */; };
 		16A58D341E448A3100069869 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A58D331E448A3100069869 /* AccountViewController.swift */; };
 		16A58D361E448A4800069869 /* ProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A58D351E448A4800069869 /* ProjectsViewController.swift */; };
 		16A58D381E448A6500069869 /* OperatorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A58D371E448A6500069869 /* OperatorsViewController.swift */; };
@@ -16,13 +24,20 @@
 		16BB5EE61DD0ED4C00664639 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16BB5EE41DD0ED4C00664639 /* Main.storyboard */; };
 		16BB5EE81DD0ED4C00664639 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16BB5EE71DD0ED4C00664639 /* Assets.xcassets */; };
 		16BB5EEB1DD0ED4C00664639 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16BB5EE91DD0ED4C00664639 /* LaunchScreen.storyboard */; };
-		16C895021E44A1AF00C2B406 /* AccountMainDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C895011E44A1AF00C2B406 /* AccountMainDataSource.swift */; };
-		16C895041E44AD5700C2B406 /* ProjectsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C895031E44AD5700C2B406 /* ProjectsDataSource.swift */; };
+		16C895041E44AD5700C2B406 /* ProjectsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C895031E44AD5700C2B406 /* ProjectsStore.swift */; };
 		16C895071E44AF0100C2B406 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C895061E44AF0100C2B406 /* Project.swift */; };
 		16EA12F11DDC3C4800198743 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EA12F01DDC3C4800198743 /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1600A8CA1E476DDC00968A40 /* CCApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCApi.swift; sourceTree = "<group>"; };
+		1600A8CC1E4778D600968A40 /* AccountStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountStore.swift; sourceTree = "<group>"; };
+		16412B5E1E45D5700048EE12 /* Monitoring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monitoring.swift; sourceTree = "<group>"; };
+		16412B611E45D8350048EE12 /* AccountStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountStatus.swift; sourceTree = "<group>"; };
+		16412B631E45D9590048EE12 /* Operator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operator.swift; sourceTree = "<group>"; };
+		16412B681E45DA410048EE12 /* CCWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCWebView.swift; sourceTree = "<group>"; };
+		16412B6A1E45DAA20048EE12 /* OperatorStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperatorStore.swift; sourceTree = "<group>"; };
+		16412B6C1E45E00A0048EE12 /* MonitoringStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonitoringStore.swift; sourceTree = "<group>"; };
 		16A58D331E448A3100069869 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		16A58D351E448A4800069869 /* ProjectsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectsViewController.swift; sourceTree = "<group>"; };
 		16A58D371E448A6500069869 /* OperatorsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperatorsViewController.swift; sourceTree = "<group>"; };
@@ -34,8 +49,7 @@
 		16BB5EE71DD0ED4C00664639 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16BB5EEA1DD0ED4C00664639 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		16BB5EEC1DD0ED4C00664639 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		16C895011E44A1AF00C2B406 /* AccountMainDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountMainDataSource.swift; sourceTree = "<group>"; };
-		16C895031E44AD5700C2B406 /* ProjectsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectsDataSource.swift; sourceTree = "<group>"; };
+		16C895031E44AD5700C2B406 /* ProjectsStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectsStore.swift; sourceTree = "<group>"; };
 		16C895061E44AF0100C2B406 /* Project.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
 		16EA12F01DDC3C4800198743 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -51,6 +65,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16412B601E45D7E10048EE12 /* account */ = {
+			isa = PBXGroup;
+			children = (
+				16A58D331E448A3100069869 /* AccountViewController.swift */,
+				16412B611E45D8350048EE12 /* AccountStatus.swift */,
+				1600A8CC1E4778D600968A40 /* AccountStore.swift */,
+			);
+			name = account;
+			sourceTree = "<group>";
+		};
+		16412B671E45DA260048EE12 /* cc */ = {
+			isa = PBXGroup;
+			children = (
+				16412B681E45DA410048EE12 /* CCWebView.swift */,
+			);
+			name = cc;
+			sourceTree = "<group>";
+		};
 		16BB5ED41DD0ED4C00664639 = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +102,8 @@
 		16BB5EDF1DD0ED4C00664639 /* cclogin */ = {
 			isa = PBXGroup;
 			children = (
+				16412B671E45DA260048EE12 /* cc */,
+				16412B601E45D7E10048EE12 /* account */,
 				16C895091E44BD4700C2B406 /* monitoring */,
 				16C895081E44BD2C00C2B406 /* operators */,
 				16C895051E44AEEA00C2B406 /* projects */,
@@ -80,8 +114,7 @@
 				16BB5EE91DD0ED4C00664639 /* LaunchScreen.storyboard */,
 				16BB5EEC1DD0ED4C00664639 /* Info.plist */,
 				16EA12F01DDC3C4800198743 /* WebViewController.swift */,
-				16A58D331E448A3100069869 /* AccountViewController.swift */,
-				16C895011E44A1AF00C2B406 /* AccountMainDataSource.swift */,
+				1600A8CA1E476DDC00968A40 /* CCApi.swift */,
 			);
 			path = cclogin;
 			sourceTree = "<group>";
@@ -89,7 +122,7 @@
 		16C895051E44AEEA00C2B406 /* projects */ = {
 			isa = PBXGroup;
 			children = (
-				16C895031E44AD5700C2B406 /* ProjectsDataSource.swift */,
+				16C895031E44AD5700C2B406 /* ProjectsStore.swift */,
 				16A58D351E448A4800069869 /* ProjectsViewController.swift */,
 				16C895061E44AF0100C2B406 /* Project.swift */,
 			);
@@ -100,6 +133,8 @@
 			isa = PBXGroup;
 			children = (
 				16A58D371E448A6500069869 /* OperatorsViewController.swift */,
+				16412B631E45D9590048EE12 /* Operator.swift */,
+				16412B6A1E45DAA20048EE12 /* OperatorStore.swift */,
 			);
 			name = operators;
 			sourceTree = "<group>";
@@ -108,6 +143,8 @@
 			isa = PBXGroup;
 			children = (
 				16A58D391E448A7800069869 /* MonitoringViewController.swift */,
+				16412B5E1E45D5700048EE12 /* Monitoring.swift */,
+				16412B6C1E45E00A0048EE12 /* MonitoringStore.swift */,
 			);
 			name = monitoring;
 			sourceTree = "<group>";
@@ -187,14 +224,21 @@
 			files = (
 				16BB5EE31DD0ED4C00664639 /* ViewController.swift in Sources */,
 				16A58D361E448A4800069869 /* ProjectsViewController.swift in Sources */,
+				16412B6B1E45DAA20048EE12 /* OperatorStore.swift in Sources */,
+				16412B5F1E45D5700048EE12 /* Monitoring.swift in Sources */,
 				16EA12F11DDC3C4800198743 /* WebViewController.swift in Sources */,
 				16C895071E44AF0100C2B406 /* Project.swift in Sources */,
+				1600A8CD1E4778D600968A40 /* AccountStore.swift in Sources */,
+				16412B6D1E45E00A0048EE12 /* MonitoringStore.swift in Sources */,
+				16412B641E45D9590048EE12 /* Operator.swift in Sources */,
+				16412B691E45DA410048EE12 /* CCWebView.swift in Sources */,
 				16A58D341E448A3100069869 /* AccountViewController.swift in Sources */,
 				16A58D3A1E448A7800069869 /* MonitoringViewController.swift in Sources */,
+				1600A8CB1E476DDC00968A40 /* CCApi.swift in Sources */,
 				16A58D381E448A6500069869 /* OperatorsViewController.swift in Sources */,
 				16BB5EE11DD0ED4C00664639 /* AppDelegate.swift in Sources */,
-				16C895021E44A1AF00C2B406 /* AccountMainDataSource.swift in Sources */,
-				16C895041E44AD5700C2B406 /* ProjectsDataSource.swift in Sources */,
+				16412B621E45D8350048EE12 /* AccountStatus.swift in Sources */,
+				16C895041E44AD5700C2B406 /* ProjectsStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

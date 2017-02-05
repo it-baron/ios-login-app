@@ -6,17 +6,18 @@
 //  Copyright © 2017 tangotel. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 class MonitoringViewController: UIViewController {
+    @IBOutlet weak var tableView: UITableView!
+    
+    var monitoringDataSource = MonitoringStore()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        tableView.delegate = self.monitoringDataSource
+        tableView.dataSource = self.monitoringDataSource
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 }

@@ -10,13 +10,15 @@ import Foundation
 import UIKit
 
 class OperatorsViewController: UIViewController {
+    @IBOutlet weak var tableView: UITableView!
+    
+    var operatorsDataSource = OperatorStore()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        tableView.delegate = self.operatorsDataSource
+        tableView.dataSource = self.operatorsDataSource
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 }

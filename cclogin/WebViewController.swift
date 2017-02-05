@@ -16,13 +16,7 @@ class WebViewController: UIViewController {
         super.viewDidLoad()
 
         let request = URLRequest(url: URL(string: urlToOpen)!)
-        // Do any additional setup after loading the view.
         uiWebView.loadRequest(request);
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
 

@@ -8,8 +8,14 @@
 
 import Foundation
 
-struct Project {
-    var id = -1
-    var shortName = ""
-    var name = ""
+class Project {
+    var id: Int?
+    var shortName: String = ""
+    var name: String = ""
+    
+    init(id: Int, shortName: String = "", name: String = "") {
+        self.id = id;
+        self.shortName = shortName;
+        self.name = name;
+    }
 }

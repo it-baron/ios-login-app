@@ -12,11 +12,18 @@ import UIKit
 class ProjectsViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
-    var projectsDataSource = ProjectsDataSource()
+    var projectsStore = ProjectsStore()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.delegate = projectsDataSource
-        tableView.dataSource = projectsDataSource
+        tableView.delegate = self.projectsStore
+        tableView.dataSource = self.projectsStore
+        
+        projectsStore.fetchProjectsItems {
+            (projectsArr) -> Void in
+            
+            self.projectsStore.items = projectsArr
+            self.tableView.reloadData()
+        }
     }
 }
