@@ -16,6 +16,8 @@ class ProjectsViewController: UIViewController {
     var projectsStore = ProjectsStore()
     
     func loadProjectsItems() {
+        self.refreshControl.beginRefreshing()
+        
         self.projectsStore.fetchProjectsItems {
             (projectsArr) -> Void in
             

@@ -16,6 +16,8 @@ class OperatorsViewController: UIViewController {
     var operatorsStore = OperatorStore()
     
     func loadItems() {
+        self.refreshControl.beginRefreshing()
+        
         self.operatorsStore.fetchOperatorsItems {
             (operatorsArr) -> Void in
             

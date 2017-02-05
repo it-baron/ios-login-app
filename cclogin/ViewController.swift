@@ -60,7 +60,7 @@ class ViewController: UIViewController {
                             let responseData = String(data: data!, encoding: String.Encoding.utf8) ?? "no data";
                             self.alert(message: "\(statusCode)\nresponse: \(responseData)")
                         } else {
-                            self.performSegue(withIdentifier: "ShowWebView", sender: nil)
+                            self.performSegue(withIdentifier: "ShowAppView", sender: nil)
                         }
                     }
                 }

@@ -32,10 +32,10 @@ class ProjectsStore: NSObject, UITableViewDelegate, UITableViewDataSource {
                         do {
                             print("ok, response = \(response)")
                             
-                            let json = try JSONSerialization.jsonObject(with: data!, options: []) as? [String:Any]
+                            let json = try JSONSerialization.jsonObject(with: data!, options: [])
                             var fetchedItems: [Project] = [];
                             
-                            if let projArray = json?["items"] as? [Any] {
+                            if let projArray = json as? [Any] {
                                 for proj in projArray {
                                     if let projItem = proj as? [String:Any] {
                                         fetchedItems.append(

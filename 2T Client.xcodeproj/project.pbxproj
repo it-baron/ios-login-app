@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1600A8CB1E476DDC00968A40 /* CCApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1600A8CA1E476DDC00968A40 /* CCApi.swift */; };
 		1600A8CD1E4778D600968A40 /* AccountStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1600A8CC1E4778D600968A40 /* AccountStore.swift */; };
+		1600A8CF1E47A77600968A40 /* OperatorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1600A8CE1E47A77600968A40 /* OperatorCell.swift */; };
+		1600A8D11E47AAAD00968A40 /* MonitoringCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1600A8D01E47AAAD00968A40 /* MonitoringCell.swift */; };
 		16412B5F1E45D5700048EE12 /* Monitoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16412B5E1E45D5700048EE12 /* Monitoring.swift */; };
 		16412B621E45D8350048EE12 /* AccountStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16412B611E45D8350048EE12 /* AccountStatus.swift */; };
 		16412B641E45D9590048EE12 /* Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16412B631E45D9590048EE12 /* Operator.swift */; };
@@ -32,6 +34,8 @@
 /* Begin PBXFileReference section */
 		1600A8CA1E476DDC00968A40 /* CCApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCApi.swift; sourceTree = "<group>"; };
 		1600A8CC1E4778D600968A40 /* AccountStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountStore.swift; sourceTree = "<group>"; };
+		1600A8CE1E47A77600968A40 /* OperatorCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperatorCell.swift; sourceTree = "<group>"; };
+		1600A8D01E47AAAD00968A40 /* MonitoringCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonitoringCell.swift; sourceTree = "<group>"; };
 		16412B5E1E45D5700048EE12 /* Monitoring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monitoring.swift; sourceTree = "<group>"; };
 		16412B611E45D8350048EE12 /* AccountStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountStatus.swift; sourceTree = "<group>"; };
 		16412B631E45D9590048EE12 /* Operator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operator.swift; sourceTree = "<group>"; };
@@ -135,6 +139,7 @@
 				16A58D371E448A6500069869 /* OperatorsViewController.swift */,
 				16412B631E45D9590048EE12 /* Operator.swift */,
 				16412B6A1E45DAA20048EE12 /* OperatorStore.swift */,
+				1600A8CE1E47A77600968A40 /* OperatorCell.swift */,
 			);
 			name = operators;
 			sourceTree = "<group>";
@@ -145,6 +150,7 @@
 				16A58D391E448A7800069869 /* MonitoringViewController.swift */,
 				16412B5E1E45D5700048EE12 /* Monitoring.swift */,
 				16412B6C1E45E00A0048EE12 /* MonitoringStore.swift */,
+				1600A8D01E47AAAD00968A40 /* MonitoringCell.swift */,
 			);
 			name = monitoring;
 			sourceTree = "<group>";
@@ -235,8 +241,10 @@
 				16A58D341E448A3100069869 /* AccountViewController.swift in Sources */,
 				16A58D3A1E448A7800069869 /* MonitoringViewController.swift in Sources */,
 				1600A8CB1E476DDC00968A40 /* CCApi.swift in Sources */,
+				1600A8CF1E47A77600968A40 /* OperatorCell.swift in Sources */,
 				16A58D381E448A6500069869 /* OperatorsViewController.swift in Sources */,
 				16BB5EE11DD0ED4C00664639 /* AppDelegate.swift in Sources */,
+				1600A8D11E47AAAD00968A40 /* MonitoringCell.swift in Sources */,
 				16412B621E45D8350048EE12 /* AccountStatus.swift in Sources */,
 				16C895041E44AD5700C2B406 /* ProjectsStore.swift in Sources */,
 			);

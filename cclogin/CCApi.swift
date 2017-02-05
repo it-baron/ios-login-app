@@ -29,8 +29,8 @@ struct CCApi {
     static let password: String = ""
     
     static func accountRequest() -> URLRequest {
-        let myUrl = URL(string: "\(LocalApiStrings.accountURLString)&login=\(login)",
-            relativeTo: URL(string: LocalApiStrings.baseURLString))
+        let myUrl = URL(string: "\(CCApiStrings.accountURLString)&login=\(login)",
+            relativeTo: URL(string: CCApiStrings.baseURLString))
         
         var request = URLRequest(url: myUrl!)
         request.httpMethod = "GET"
@@ -38,8 +38,8 @@ struct CCApi {
     }
     
     static func projectsRequest() -> URLRequest {
-        let myUrl = URL(string: "\(LocalApiStrings.projectsURLString)&login=\(login)",
-                        relativeTo: URL(string: LocalApiStrings.baseURLString))
+        let myUrl = URL(string: "\(CCApiStrings.projectsURLString)&login=\(login)",
+                        relativeTo: URL(string: CCApiStrings.baseURLString))
         
         var request = URLRequest(url: myUrl!)
         request.httpMethod = "GET"
@@ -47,16 +47,16 @@ struct CCApi {
     }
     
     static func operatorsRequest() -> URLRequest {
-        let myUrl = URL(string: "\(LocalApiStrings.operatorsURLString)&login=\(login)",
-                        relativeTo: URL(string: LocalApiStrings.baseURLString))
+        let myUrl = URL(string: "\(CCApiStrings.operatorsURLString)&login=\(login)",
+                        relativeTo: URL(string: CCApiStrings.baseURLString))
         var request = URLRequest(url: myUrl!)
         request.httpMethod = "GET"
         return request
     }
     
     static func monitoringRequest() -> URLRequest {
-        let myUrl = URL(string: "\(LocalApiStrings.monitoringURLString)&login=\(login)",
-            relativeTo: URL(string: LocalApiStrings.baseURLString))
+        let myUrl = URL(string: "\(CCApiStrings.monitoringURLString)&login=\(login)",
+            relativeTo: URL(string: CCApiStrings.baseURLString))
         var request = URLRequest(url: myUrl!)
         request.httpMethod = "GET"
         return request

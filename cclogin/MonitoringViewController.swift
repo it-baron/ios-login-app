@@ -15,6 +15,8 @@ class MonitoringViewController: UIViewController {
     var monitoringStore = MonitoringStore()
     
     func loadItems() {
+        self.refreshControl.beginRefreshing()
+        
         monitoringStore.fetchMonitoringItems {
             (monitoringArr) -> Void in
             

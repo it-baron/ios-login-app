@@ -32,10 +32,10 @@ class OperatorStore: NSObject, UITableViewDelegate, UITableViewDataSource {
                         do {
                             print("ok, response = \(response)")
                             
-                            let json = try JSONSerialization.jsonObject(with: data!, options: []) as? [String:Any]
+                            let json = try JSONSerialization.jsonObject(with: data!, options: [])
                             var fetchedItems: [Operator] = [];
                             
-                            if let array = json?["items"] as? [Any] {
+                            if let array = json as? [Any] {
                                 for item in array {
                                     if let itemObj = item as? [String:Any] {
                                         fetchedItems.append(
@@ -69,10 +69,12 @@ class OperatorStore: NSObject, UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "OperatorCell")! as UITableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "OperatorCell")! as! OperatorCell
         
-        cell.textLabel?.text = items[indexPath.row].shortName;
-        cell.detailTextLabel?.text = items[indexPath.row].name;
+        cell.title?.text = items[indexPath.row].shortName
+        cell.subTitle?.text = items[indexPath.row].name
+        cell.total?.text = "\(items[indexPath.row].total)"
+        cell.online?.text = "\(items[indexPath.row].online)"
         
         return cell;
     }
