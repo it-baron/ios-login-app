@@ -42,7 +42,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kQA-xa-vti">
                                 <rect key="frame" x="127" y="329" width="120" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.52263247970000004" green="0.1761913598" blue="0.51911449430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.50196078431372548" green="0.0" blue="0.51764705882352935" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
                                 <state key="normal" title="Войти">
@@ -59,65 +59,12 @@
                         <outlet property="loginButton" destination="kQA-xa-vti" id="zAW-2q-7wK"/>
                         <outlet property="txtLogin" destination="Khj-Ly-jna" id="VXY-o6-ZmB"/>
                         <outlet property="txtPassword" destination="xZc-u9-Tck" id="GVe-pa-vj7"/>
-                        <segue destination="Mt7-70-mwZ" kind="show" identifier="ShowWebView" id="EEq-kT-Nrc"/>
                         <segue destination="9We-J9-Axk" kind="show" identifier="ShowAppView" id="UxA-TQ-WSx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="31.199999999999999" y="36.431784107946029"/>
-        </scene>
-        <!--Web View Controller-->
-        <scene sceneID="fQ2-3k-PP0">
-            <objects>
-                <viewController id="Mt7-70-mwZ" customClass="WebViewController" customModule="_T_Client" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="NDD-M1-ep6"/>
-                        <viewControllerLayoutGuide type="bottom" id="kPw-qR-bZu"/>
-                    </layoutGuides>
-                    <view key="view" opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" id="PDL-nO-dDl">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
-                        <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YNm-Ki-He0">
-                                <rect key="frame" x="0.0" y="52.5" width="375" height="570.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </webView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ugw-xu-Ps8">
-                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <items>
-                                    <barButtonItem title="Назад" id="FBB-Qf-izz" userLabel="btnBack">
-                                        <connections>
-                                            <action selector="onBackPress:" destination="Mt7-70-mwZ" id="Gf6-y4-wVJ"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
-                            </toolbar>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SgL-kG-hZi">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="2Т КЦ" id="Lgd-Vn-hA4">
-                                        <barButtonItem key="backBarButtonItem" title="Назад" id="dC7-ZK-VJq"/>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <extendedEdge key="edgesForExtendedLayout"/>
-                    <nil key="simulatedStatusBarMetrics"/>
-                    <nil key="simulatedTopBarMetrics"/>
-                    <nil key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="uiWebView" destination="YNm-Ki-He0" id="fds-vk-Or4"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ne9-oj-S7G" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="763.125" y="39.08450704225352"/>
         </scene>
         <!--2T WebView Content-->
         <scene sceneID="DZC-hE-rvj">
@@ -134,27 +81,27 @@
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pPf-wH-t1n">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
                                     <navigationItem title="2Т КЦ" id="BUI-d0-o2o"/>
                                 </items>
                             </navigationBar>
                             <webView contentMode="scaleToFill" fixedFrame="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4O3-Qw-8eh">
-                                <rect key="frame" x="0.0" y="65" width="375" height="505"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.50196078431372548" green="0.0" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="2Т КЦ" id="ZsF-4D-dah"/>
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <connections>
                         <outlet property="webView" destination="4O3-Qw-8eh" id="A7Z-H3-YTi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BGY-rl-9fZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-726" y="1639"/>
+            <point key="canvasLocation" x="-727.20000000000005" y="1638.5307346326838"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="CGd-km-Iir">
@@ -164,7 +111,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="selectedImageTintColor" red="0.52263247970000004" green="0.1761913598" blue="0.51911449430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.50196078431372548" green="0.0" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="BAE-lt-94V" kind="relationship" relationship="viewControllers" id="OcF-vu-szE"/>
@@ -612,10 +559,10 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BAE-lt-94V" userLabel="Account Navigation" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Аккаунт" image="contacts_2x" id="eHR-RC-MYv"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="i2Z-4n-co1">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" id="i2Z-4n-co1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.52263247970000004" green="0.1761913598" blue="0.51911449430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.50196078431372548" green="0.0" blue="0.51764705882352935" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -633,10 +580,10 @@
                     <tabBarItem key="tabBarItem" title="Проекты" image="bookmarks_2x" id="gLz-1K-Lrr"/>
                     <toolbarItems/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="ffG-nS-1kf">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" id="ffG-nS-1kf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.52263247970000004" green="0.1761913598" blue="0.51911449430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.50196078431372548" green="0.0" blue="0.51764705882352935" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -653,10 +600,10 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QP7-wh-hEv" userLabel="Operators Navigation" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Операторы" image="history_2x" id="rHl-iN-vWT"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="gHG-0W-JQj">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" id="gHG-0W-JQj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.52263247970000004" green="0.1761913598" blue="0.51911449430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.50196078431372548" green="0.0" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -673,10 +620,10 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SZA-Z7-ulw" userLabel="Monitoring Navigation" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Мониторинг" image="mostviewed_2x" id="aXy-OK-uZo"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="GL6-ki-UwL">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" id="GL6-ki-UwL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.52263247970000004" green="0.1761913598" blue="0.51911449430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.50196078431372548" green="0.0" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -693,10 +640,10 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rGm-IS-z08" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="2Т КЦ" image="more_2x" id="7nu-DH-pem"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="vMQ-U3-N6b">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" id="vMQ-U3-N6b">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.52263247970000004" green="0.1761913598" blue="0.51911449430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.50196078431372548" green="0.0" blue="0.51764705882352935" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

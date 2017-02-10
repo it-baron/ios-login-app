@@ -30,7 +30,6 @@ class MonitoringViewController: UIViewController {
         super.viewDidLoad()
 
         self.refreshControl = UIRefreshControl()
-        self.refreshControl.attributedTitle = NSAttributedString(string: "Идет обновление...")
         self.refreshControl.addTarget(self,
                                       action: #selector(self.refresh(sender:)),
                                       for: .valueChanged)
