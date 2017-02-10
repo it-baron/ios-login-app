@@ -13,6 +13,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var txtLogin: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
     
+    // This constraint ties an element at zero points from the bottom layout guide
+    @IBOutlet var keyboardHeightLayoutConstraint: NSLayoutConstraint?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         txtLogin.resignFirstResponder()
@@ -23,7 +26,30 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         txtPassword?.returnKeyType = UIReturnKeyType.done
         txtPassword?.delegate = self
+        
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(self.keyboardWillShow(sender:)),
+                                               name: NSNotification.Name.UIKeyboardWillShow,
+                                               object: nil);
+        
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(self.keyboardWillHide(sender:)),
+                                               name: NSNotification.Name.UIKeyboardWillHide,
+                                               object: nil);
     }
+    
+    func keyboardWillShow(sender: NSNotification) {
+        self.view.frame.origin.y = -150
+    }
+    
+    func keyboardWillHide(sender: NSNotification) {
+        self.view.frame.origin.y = 0
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         onLogin(textField)
