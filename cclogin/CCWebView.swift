@@ -8,21 +8,11 @@
 
 import UIKit
 
-extension UIImage {
-    class func imageWithColor(color: UIColor) -> UIImage {
-        let rect = CGRect(x: 0.0, y: 0.0, width: 1.0, height: 0.5)
-        UIGraphicsBeginImageContextWithOptions(rect.size, false, 0.0)
-        color.setFill()
-        UIRectFill(rect)
-        let image : UIImage = UIGraphicsGetImageFromCurrentImageContext()!
-        UIGraphicsEndImageContext()
-        return image
-    }
-}
-
-class CCWebView: UIViewController {
+class CCWebView: UIViewController, UIWebViewDelegate {
     @IBOutlet weak var webView: UIWebView!
+    
     var urlToOpen: String = "https://mstat.2t.ru/mob/"
+    var refreshControl: UIRefreshControl = UIRefreshControl()
     
     func getRequest() -> URLRequest {
         return URLRequest(url: URL(string: urlToOpen)!)
@@ -31,26 +21,26 @@ class CCWebView: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let color = UIColor.init(red: 0.5, green: 0, blue: 0.5, alpha: 1);
-        
-        self.navigationController?.navigationBar.setBackgroundImage(
-            UIImage.imageWithColor(color: color), for: .default)
-        
-        self.navigationController?.navigationBar.shadowImage = UIImage.imageWithColor(color: color)
-        
         webView.loadRequest(self.getRequest());
         
-        let refreshControl = UIRefreshControl()
         refreshControl.addTarget(self,
                                  action: #selector(self.refreshWebView(sender:)),
                                  for: UIControlEvents.valueChanged)
         
         webView.scrollView.addSubview(refreshControl)
+        webView.delegate = self
+    }
+    
+    func webViewDidStartLoad(_ webView: UIWebView) {
+        refreshControl.beginRefreshing()
+    }
+    
+    func webViewDidFinishLoad(_ webView: UIWebView) {
+        refreshControl.endRefreshing()
     }
     
     func refreshWebView(sender: UIRefreshControl) {
         print("refresh")
-        webView.loadRequest(self.getRequest())
-        sender.endRefreshing()
+        webView.loadRequest(self.getRequest());
     }
 }

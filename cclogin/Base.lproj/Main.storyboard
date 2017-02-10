@@ -579,8 +579,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="I6k-SW-b9J" userLabel="Projects Navigation" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Проекты" image="bookmarks_2x" id="gLz-1K-Lrr"/>
                     <toolbarItems/>
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" id="ffG-nS-1kf">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="ffG-nS-1kf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.50196078431372548" green="0.0" blue="0.51764705882352935" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -640,12 +639,17 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rGm-IS-z08" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="2Т КЦ" image="more_2x" id="7nu-DH-pem"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" id="vMQ-U3-N6b">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="vMQ-U3-N6b">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.50196078431372548" green="0.0" blue="0.51764705882352935" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.50196078431372548" green="0.0" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="GBO-yC-Xd7">
+                        <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.50196078430000002" green="0.0" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </toolbar>
                     <connections>
                         <segue destination="upp-0V-MiZ" kind="relationship" relationship="rootViewController" id="mwd-nD-0J1"/>
                     </connections>
@@ -664,4 +668,5 @@
         <image name="mostviewed_2x" width="23" height="23"/>
         <image name="quickaction_icon_prohibit" width="29" height="28"/>
     </resources>
+    <color key="tintColor" red="0.50196078430000002" green="0.0" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
