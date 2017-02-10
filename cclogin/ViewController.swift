@@ -12,6 +12,7 @@ import Foundation
 class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var txtLogin: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
+    @IBOutlet weak var loginButton: UIButton!
     
     // This constraint ties an element at zero points from the bottom layout guide
     @IBOutlet var keyboardHeightLayoutConstraint: NSLayoutConstraint?
@@ -39,7 +40,17 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     func keyboardWillShow(sender: NSNotification) {
-        self.view.frame.origin.y = -150
+        if let userInfo = sender.userInfo {
+            let keyboardSize = (userInfo[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue
+            let keyboardHeight = (keyboardSize?.height)!
+            let buttonBottom = loginButton.frame.height + loginButton.frame.origin.y
+            let viewHeight = self.view.frame.height
+            
+            if viewHeight - keyboardHeight < buttonBottom {
+                self.view.frame.origin.y = (viewHeight - keyboardHeight) - (buttonBottom + 16)
+            }
+        
+        }
     }
     
     func keyboardWillHide(sender: NSNotification) {
